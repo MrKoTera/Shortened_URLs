@@ -4,7 +4,7 @@ Service for creating shortened links.
 ### Launch requirements:
 Server or hosting with MySQL support (phpMyAdmin) and PHP 7.4
 
-Instruction:
+# Instruction:
 1. Download all files from the repository and unpack;
 2. Run the server (OpenServer) or place all files on a hosting with support for MySQL and PHP 7.4;
 3. Go to phpMyAdmin and import the entire database structure from the "DATABASE" folder
