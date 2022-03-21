@@ -1,7 +1,7 @@
-#Shortened_URLs
+# Shortened_URLs
 Service for creating shortened links.
 
-###Launch requirements:
+### Launch requirements:
 Server or hosting with MySQL support (phpMyAdmin) and PHP 7.4
 
 Instruction:
