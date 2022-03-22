@@ -31,9 +31,11 @@ if (isset($_GET['short_url'])) {
     if ($check_bool) {
         $ins = mysqli_query($connector, "INSERT INTO urls (url, shorturl) VALUES ('".$request."','".$shorturl."')");
         if ($ins) {
-            $_GET['short_url'] = $_SERVER['SERVER_NAME'].'/'.$shorturl; 
+            header('Content-Type: text/html; charset=utf-8');
+            $_GET['short_url'] = $_SERVER['SERVER_NAME'].'/'.$shorturl;
+            echo $_GET['short_url'];
         } else {
-            echo '<script>alert("Ошибка передачи запроса")</script'; 
+            echo '<script>alert("Ошибка передачи запроса")</script>'; 
         }
     } else { }
 } else {

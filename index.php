@@ -15,12 +15,14 @@
 integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
 crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
+<script src="js/ajax.js"></script>
+
     <section class="mainsection">
         <div class="container">
             <div class="mainsection__inner">
                 <a href="/" class="mainsection__title">Сократитель URL-ссылок</a>
-                <form action="" class="mainsection__input input-group" method="GET">
-                    <input type="text" class="form_inp" value="<?= $_GET['short_url']?>" id="main_input" name="short_url" placeholder="Введите URL">
+                <form action="" id="main_form" class="mainsection__input input-group" method="GET">
+                    <input type="text" class="form_inp" id="main_input" name="short_url" placeholder="Введите URL">
                     <button class="btn copy_btn" type="button" id="copybtn" onclick="copyTextFromInput()">Копировать</button>
                     <button class="btn submit_btn" type="submit" id="sub_btn">Сократить URL</button>
                 </form>
